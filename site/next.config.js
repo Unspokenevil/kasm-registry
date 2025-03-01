@@ -2,10 +2,10 @@
 
 const nextConfig = {
   env: {
-    name: 'Kasm Technologies',
-    description: 'The official store for Kasm supported workspaces.',
+    name: 'The Nerd You Know',
+    description: 'The unofficial store for Kasm workspaces.',
     icon: '/img/logo.svg',
-    listUrl: 'https://registry.kasmweb.com/',
+    listUrl: 'https://unspokenevil.github.io/kasm-registry/1.1/',
     contactUrl: 'https://kasmweb.com/support',
   },
   reactStrictMode: true,
