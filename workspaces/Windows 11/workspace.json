@@ -1,26 +1,13 @@
 {
   "description": "Windows 11 container.",
-  "name": "ghcr.io/dockur/windows:4.16",
   "cores": 8,
   "memory": 16394,
   "gpu_count": 1,
   "cpu_allocation_method": "Inherit",
   "docker_registry": "https://index.docker.io/v1/",
   "require_gpu": false,
-  "enabled": true,
   "image_type": "Container",
-  "image_src": "chromium.png",
-  "run_config": {
-    "hostname": "kasm"
-  },
-  "exec_config": {
-    "go": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-    },
-    "assign": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-    }
-  },
+  "image_src": "windows.png",
   "categories": [
     "Desktop"
   ],
@@ -30,11 +17,14 @@
   ],
   "compatibility": [
     {
-      "version": "1.17.x",
-      "image": "ghcr.io/dockur/windows:4.16",
-      "uncompressed_size_mb": 2170,
+      "version": "1.16.x",
+      "image": "ghcr.io/dockur/windows:latest",
+      "uncompressed_size_mb": 2643,
       "available_tags": [
-        "develop"
+        "develop",
+        "1.16.0",
+        "1.16.0-rolling-weekly",
+        "1.16.0-rolling-daily"
       ]
     }
   ]
