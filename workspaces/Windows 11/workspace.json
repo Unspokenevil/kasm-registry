@@ -37,13 +37,5 @@
         "develop"
       ]
     }
-    {
-      "version": "1.17.x",
-      "image": "dockurr/windows",
-      "uncompressed_size_mb": 20170,
-      "available_tags": [
-        "develop"
-      ]
-    }
   ]
 }
